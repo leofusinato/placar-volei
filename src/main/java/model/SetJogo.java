@@ -19,12 +19,6 @@ public class SetJogo {
         this.pontosB = pontosB;
     }
 
-    @Override
-    public String toString() {
-        String vencedor = pontosA > pontosB ? equipeA : equipeB;
-        return "Set: " + numero + " --- " + equipeA + " " + pontosA + " x " + pontosB + " " + equipeB + " --- Vencedor: " + vencedor;
-    }
-
     public String getEquipeA() {
         return equipeA;
     }
@@ -41,4 +35,12 @@ public class SetJogo {
         this.equipeB = equipeB;
     }
     
+   public String getVencedor() {
+       return pontosA > pontosB ? equipeA : equipeB;
+   } 
+   
+    @Override
+    public String toString() {
+        return "Set: " + numero + " --- " + equipeA + " " + pontosA + " x " + pontosB + " " + equipeB + " --- Vencedor: " + getVencedor();
+    }
 }

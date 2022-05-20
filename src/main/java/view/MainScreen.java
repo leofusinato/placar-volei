@@ -1,7 +1,6 @@
 package view;
 
 import javax.swing.JOptionPane;
-import model.Equipe;
 import model.Partida;
 import model.SetJogo;
 
